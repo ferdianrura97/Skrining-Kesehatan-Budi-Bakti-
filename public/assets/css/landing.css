@@ -1,0 +1,77 @@
+.badan{
+  background-image: url(../images/begin1.png);
+}
+
+#pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.mbegin {
+  width: 500px;
+  height: 200px;
+  background-color: #2a51bd;
+  color: #fff;
+  animation: fadeIn 1s, slideIn .8s linear;
+  margin: auto;
+  /* margin-top: 325px; */
+  border-radius: 20px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  box-shadow: 0px 0px 30px rgb(37, 37, 37);
+}
+
+.line-middle{
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #fff; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+}
+
+.line-middle span { 
+  background:#2a51bd; 
+  padding:0 10px; 
+}
+
+.previous {
+  text-align: left;
+}
+  
+.next {
+  text-align: right;
+}
+
+.tombol{
+  box-shadow: 0px 0px 20px rgba(46, 46, 46, 0.637);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(400px);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateY(10px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
